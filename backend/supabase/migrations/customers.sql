@@ -1,0 +1,7 @@
+CREATE TABLE customers (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  phone TEXT UNIQUE NOT NULL,
+  credits INT DEFAULT 0,
+  created_at TIMESTAMP DEFAULT NOW()
+);

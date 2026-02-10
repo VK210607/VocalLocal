@@ -1,0 +1,8 @@
+CREATE TABLE vendors (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  phone TEXT UNIQUE NOT NULL,
+  verified BOOLEAN DEFAULT false,
+  srn TEXT UNIQUE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
